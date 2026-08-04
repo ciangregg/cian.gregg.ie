@@ -1,10 +1,10 @@
 // parameters for the simulation
 export const sim = {
 
-    nx: 120,
-    ny: 60,
+    nx:160,
+    ny:80,
 
-    cellSize: 8,
+    cellSize: 10,
 
     J: 1.0,
 
@@ -30,7 +30,7 @@ export function initialiseSimulation() {
 
 }
 
-function idx(x, y) {
+export function idx(x, y) {
 
     x = (x + sim.nx) % sim.nx;
     y = (y + sim.ny) % sim.ny;
@@ -133,12 +133,12 @@ export function createField() {
 
 
     ctx.fillStyle = "white";
-    ctx.font = "bold 45px Arial";
+    ctx.font = "bold 25px Arial";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
 
     ctx.fillText(
-        "Cian",
+        "Cian Gregg",
         sim.nx/2,
         sim.ny/2
     );

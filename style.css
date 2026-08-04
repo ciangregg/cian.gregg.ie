@@ -1,5 +1,5 @@
 :root {
-  --light-purple: #4c0099;
+  --light-purple: #280047;
   --light-purple-hover: #60c;
   --dropdown-grey: #f1f1f1;
 }
@@ -11,7 +11,7 @@ html, body {
     height: 100%;
     overflow: hidden;
 
-    background: #111;
+    background: #202020;
 }
 
 
@@ -19,24 +19,33 @@ canvas {
     image-rendering: pixelated;
 }
 
-
-
-/* Ising restart button */
+/* ising title */
 .ising-container {
-    margin-top: 20px;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+
+.canvas-wrapper {
+    max-width: 1600px;
+    width: 90vw;
+}
+
+
+#isingCanvas {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+    display: block;
 }
 
 
 .ising-button {
-
     margin-top: 20px;
 
     background-color: var(--light-purple);
-
     color: white;
 
     border: none;
@@ -46,27 +55,21 @@ canvas {
     font-size: 25px;
 
     cursor: pointer;
-
     font-family: inherit;
-
 }
-
-
-.ising-button:hover {
-
-    background-color: var(--light-purple-hover);
-
-}
-
-
 @media (max-width: 490px) {
 
     .ising-button {
+            font-size: min(15px,3.75vw);
+            padding: 10px 12px;
+        }
 
-        font-size: min(15px,3.75vw);
+    .ising-container {
+        margin-top: 2vh;
+    }}
 
-    }
-
+.ising-button:hover {
+    background-color: var(--light-purple-hover);
 }
 
 /* navbar */

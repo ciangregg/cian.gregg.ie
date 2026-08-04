@@ -12,8 +12,8 @@ import {
 
 const canvas = document.getElementById("isingCanvas");
 
-canvas.width = 960;
-canvas.height = 480;
+canvas.width = 1600;
+canvas.height = 800;
 
 
 
