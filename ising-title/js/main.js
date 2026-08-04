@@ -1,7 +1,8 @@
 import {
     sim,
     initialiseSimulation,
-    createField
+    createField,
+    resetAnnealing
 } from "./simulation.js";
 
 import {
@@ -21,3 +22,13 @@ initialiseSimulation();
 createField();
 
 startRenderer(canvas, sim);
+
+const resetButton =
+    document.getElementById("resetButton");
+
+
+resetButton.onclick = () => {
+
+    resetAnnealing();
+
+};

@@ -1,3 +1,4 @@
+// parameters for the simulation
 export const sim = {
 
     nx: 120,
@@ -16,6 +17,7 @@ export const sim = {
 
 };
 
+// main simulation functions
 export function initialiseSimulation() {
 
     sim.spins = new Int8Array(sim.nx * sim.ny);
@@ -77,6 +79,8 @@ export function metropolisSweep() {
 
 }
 
+
+// annealing functions
 export function anneal() {
 
     // do several sweeps per frame
@@ -96,8 +100,21 @@ export function anneal() {
 
 }
 
+export function resetAnnealing() {
+
+    sim.T = 9.0;
+
+    for (let i = 0; i < sim.spins.length; i++) {
+
+        sim.spins[i] =
+            Math.random() < 0.5 ? -1 : 1;
+
+    }
+
+}
 
 
+// create a field of external magnetic field values for name rendering
 
 export function createField() {
 
