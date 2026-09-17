@@ -2,39 +2,77 @@
 <html lang="en">
 <head>
 <title>Cian</title>
-<!--<link rel="icon" type="image/x-icon" href="images/logo.png">-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-
 </head>
-<script type="module" src="ising-title/js/main.js"></script>
-
 <body>
-<!--navbar
 
-<div class="navbar">
-  <li><a href="index.html">Home</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Projects</a>
-    <div class="dropdown-content">
-      <a href="javascript:void(0)">Sure</a>
-      <a href="javascript:void(0)">BH</a>
-    </div>
-  </li>
-  <li><a href="javascript:void(0)">Contact me</a></li>
-</div>-->
+<header class="title-block">
 
-<div class="ising-container">
+    <canvas id="isingCanvas"></canvas>
 
-    <div class="canvas-wrapper">
-        <canvas id="isingCanvas"></canvas>
-    </div>
-
-    <button id="resetButton" class="ising-button">
-        Restart Annealing
+    <button id="resetButton" class="reset-button">
+        Restart annealing
     </button>
 
-</div>
+    <p class="blurb">
+        This simulation is annealed with a Metropolis-Hastings Markov chain:
+        placeholder text.
+    </p>
+
+</header>
+
+<main>
+
+    <section id="about">
+        <h2>About</h2>
+        <div class="about-content">
+            <img src="images/Cian.png" alt="" class="profile-photo">
+            <p>
+                Hi, I'm Cian Gregg. I'm in fourth year of Theoretcial Physics at Trinity College Dublin. .....Ising models.... stat physics... MCMC...
+            </p>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>Research and projects</h2>
+
+        <article class="entry">
+            <h3>Probablistic Computing - CRANN Institute, TCD</h3>
+            <p>
+              
+            </p>
+            <a href="reports/QUBO_and_Ising_Formulations_of_Optimisation_Problems.pdf">Read the report (PDF)</a>
+        </article>
+
+        <article class="entry">
+            <h3>Blackhole Thermodynamics reading project</h3>
+            <p>
+                Placeholder abstract, to be replaced.
+            </p>
+            <a href="#">Read the report (PDF)</a>
+        </article>
+
+        <article class="entry">
+            <h3>TPSA Hackathon 2026</h3>
+            <h4 style="color: var(--muted);">Stochastic Constraint Grouping through Simulated Annealing</h4>
+            <p>
+
+            </p>
+            <a href="#">View the project</a>
+        </article>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><a href="mailto:cian@gregg.ie">cian@gregg.ie</a></p>
+    </section>
+
+</main>
+
+<script type="module" src="ising-title/js/main.js"></script>
+
 </body>
 </html>
