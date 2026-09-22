@@ -17,8 +17,7 @@
     </button>
 
     <p class="blurb">
-        This simulation is annealed with a Metropolis-Hastings Markov chain:
-        placeholder text.
+      A Monte Carlo  Markov Chain simulation of a 2D Ising model. Simulated annealing cools the system towards its minimum energy state, my name.
     </p>
 
 </header>
@@ -29,8 +28,8 @@
         <h2>About</h2>
         <div class="about-content">
             <img src="images/Cian.png" alt="" class="profile-photo">
-            <p>
-                Hi, I'm Cian Gregg. I'm in fourth year of Theoretcial Physics at Trinity College Dublin. .....Ising models.... stat physics... MCMC...
+            <p class="white">
+                Hi, I'm Cian Gregg, a fourth year Theoretical Physics student at Trinity College Dublin. I'm interested in statistical physics and aim to continuously study Ising models with MCMC methods.
             </p>
         </div>
     </section>
@@ -40,34 +39,45 @@
 
         <article class="entry">
             <h3>Probablistic Computing - CRANN Institute, TCD</h3>
+            <h4>QUBO and Ising Formulations of Optimisation Problems</h4>
             <p>
-              
+              A 12-week SURE (Summer Undergraduate Research Experience, TCD School of Physics) project at the CRANN Institute, supervised by Professor Stefano Sanvito and Michael Mitchell. We reformulated optimisation problems as searches for minimum-energy states of an Ising or QUBO energy landscape, building a Monte Carlo Markov Chain framework and using simulated annealing to explore the landscape and find its minimum. We applied this to a sequence of established combinatorial problems, extending to a mixed-integer optimal control problem of a 1D rocket trajectory. This showed us that such problems can be translated naturally to probabilistic computing hardware.
             </p>
-            <a href="reports/QUBO_and_Ising_Formulations_of_Optimisation_Problems.pdf">Read the report (PDF)</a>
+            <a href="reports/QUBO_and_Ising_Formulations_of_Optimisation_Problems.pdf">Read the report (PDF)</a><br>
+            <a href="https://https://github.com/ciangregg/probabilistic-computing">View the project (github)</a>
+          </article>
+
+        <article class="entry">
+            <h3>Black Hole Thermodynamics</h3>
+            <h4>The First and Second Laws Following Bekenstein (1973)</h4>
+          
+            <p>
+              A 6-week reading project supervised by Manya Sahni O'Hara, deriving black hole thermodynamics from its relativistic foundations. We started with special and general relativity, moving through the Schwarzschild, Reissner-Nordström, and Kerr solutions, and derived the first and second laws following Bekenstein (1973), through to temperature and the generalised second law.
+            </p>
+            <a href="reports/BlackHoleThermodynamics.pdf">Read the report (PDF)</a>
         </article>
 
         <article class="entry">
-            <h3>Blackhole Thermodynamics reading project</h3>
+            <h3>The Problem Solving Association Hackathon 2026</h3>
+            <h4>Stochastic Constraint Grouping through Simulated Annealing</h4>
+            <p> I participated in <a href="https://tpsa.ie/problem-solving" style="color: --var(muted);">The Problem Solving Association's</a> annual hackathon in 2026, where my team was fortunate to come second.</p>
             <p>
-                Placeholder abstract, to be replaced.
+                Ireland dispatches down (turns off production of) a significant share of its renewable generation each year due to <a href="https://en.wikipedia.org/wiki/Curtailment_(electricity)" style="color: var(--muted)">curtailment</a>. EirGrid and SONI operate a single wholesale market, meaning it can't be used to constrain output, so the TSO cuts generators in fixed constraint groups instead.
             </p>
-            <a href="#">Read the report (PDF)</a>
-        </article>
-
-        <article class="entry">
-            <h3>TPSA Hackathon 2026</h3>
-            <h4 style="color: var(--muted);">Stochastic Constraint Grouping through Simulated Annealing</h4>
             <p>
-
+              Our project aimed to improve the efficiency of these constraint groups, by applying simulated annealing to minimised the dispatch down percentage of renewable generators. As a team of Theoretical Physics and Engineering students, we developed a simulator inputing town and groups giving a dispatch down percentage, and then an annealing schedule to find the optimal grouping. We found that our method in the most cautious case still reduced the dispatch down percentage by 0.5% compared to the current all ireland groupings a saving of millions of euros per year.
             </p>
-            <a href="#">View the project</a>
-        </article>
+            <a href="https://github.com/ciangregg/EIEG_Hackathon26">View the project (github)</a>
+            
+          </article>
 
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
+        <h2>Contact Me</h2>
         <p><a href="mailto:cian@gregg.ie">cian@gregg.ie</a></p>
+        <p><a href="https://github.com/ciangregg">GitHub</a></p>
+
     </section>
 
 </main>

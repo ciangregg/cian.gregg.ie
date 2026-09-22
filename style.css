@@ -19,9 +19,17 @@ html, body {
     color: var(--fg);
 }
 
+p {
+  color: var(--muted);
+}
+
+.white {
+    color: var(--fg) !important;
+}
+
 body {
     font-family: var(--font-body);
-    font-size: 18px;
+    font-size: 0.9rem;
     line-height: 1.6;
 }
 
@@ -47,7 +55,7 @@ h2, h3 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: 0 0 1.5rem 0;
 }
 
@@ -60,6 +68,7 @@ h4 {
     font-size: 0.9rem;
     margin: 0 0 0.5rem 0;
 }
+
 
 canvas {
     image-rendering: pixelated;
