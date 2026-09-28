@@ -8,7 +8,7 @@ export const sim = {
 
     J: 1.0,
 
-    T: 70.0,
+    T: 40.0,
     finalT: 0.1,
     cooling: 0.99,
     h: null,
