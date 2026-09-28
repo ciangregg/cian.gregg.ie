@@ -2,40 +2,109 @@
 <html lang="en">
 <head>
 <title>Cian</title>
-<!--<link rel="icon" type="image/x-icon" href="images/logo.png">-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-<!--navbar-->
 
-<div class="navbar">
-  <li><a href="index.html">Home</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Projects</a>
-    <div class="dropdown-content">
-      <a href="javascript:void(0)">Sure</a>
-      <a href="javascript:void(0)">BH</a>
-    </div>
-  </li>
-  <li><a href="javascript:void(0)">Contact me</a></li>
-</div>
-
-<div class="ising-container">
+<header class="title-block">
 
     <canvas id="isingCanvas"></canvas>
 
-    <button id="resetButton" class="ising-button">
-        Restart Annealing
+    <button id="resetButton" class="reset-button">
+        Restart annealing
     </button>
 
-</div>
+    <p class="blurb">
+      A Monte Carlo  Markov Chain simulation of a 2D Ising model. Simulated annealing cools the system towards its minimum energy state, my name.
+    </p>
 
-    <canvas id="isingCanvas"></canvas>
+</header>
 
-    <script type="module" src="ising-title/js/main.js"></script>
+<main>
+    <section id="about">
+        <h2>About</h2>
+        <div class="about-content">
+            <img src="images/Cian.png" alt="" class="profile-photo">
+            <p class="white">
+              Hi, I'm Cian Gregg, a fourth year Theoretical Physics student at Trinity College Dublin. I'm interested in statistical physics, especially where it meets computation with Monte Carlo simulations and neural networks. I'm hoping to continue my studies next year, somewhere.
+            </p>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>Research and Projects</h2>
+
+        <article class="entry">
+            <h3>Probablistic Computing 2026 - CRANN Institute, TCD</h3>
+            <h4>QUBO and Ising Formulations of Optimisation Problems</h4>
+            <p>
+              A 12-week SURE (Summer Undergraduate Research Experience, TCD School of Physics) project at the CRANN Institute, supervised by Professor Stefano Sanvito and Michael Mitchell. We reformulated optimisation problems as searches for minimum-energy states of an Ising or QUBO energy landscape, building a Monte Carlo Markov Chain framework and using simulated annealing to explore the landscape and find its minimum. We applied this to a sequence of established combinatorial problems, extending to a mixed-integer optimal control problem of a 1D rocket trajectory. This showed us that such problems can be translated naturally to probabilistic computing hardware.
+            </p>
+            <a href="reports/QUBO_and_Ising_Formulations_of_Optimisation_Problems.pdf">Read the report (PDF)</a><br>
+            <a href="https://github.com/ciangregg/probabilistic-computing">View the project (github)</a>
+          </article>
+        <article class="entry">
+            <h3>Black Hole Thermodynamics 2026</h3>
+            <h4>The First and Second Laws Following Bekenstein (1973)</h4>
+          
+            <p>
+              A reading project supervised by Manya Sahni O'Hara, deriving black hole thermodynamics from its relativistic foundations. We started with special and general relativity, moving through the Schwarzschild, Reissner-Nordström, and Kerr solutions, and derived the first and second laws following Bekenstein (1973), through to temperature and the generalised second law.
+            </p>
+            <a href="reports/BlackHoleThermodynamics.pdf">Read the report (PDF)</a>
+        </article>
+
+        <article class="entry">
+            <h3>The Problem Solving Association's Hackathon 2026</h3>
+            <h4>Stochastic Constraint Grouping through Simulated Annealing</h4>
+            
+            <p>
+              I participated in the <a href="https://tpsa.ie/problem-solving" style="color: --var(muted);">TPSA's</a> annual hackathon in collaboration with TF Wind, where my team came second. The project aimed to improve the efficiency of Ireland's electricity grid: Ireland dispatches down a significant share of its renewable generation each year due to curtailment, which the TSO manages by cutting generators in fixed constraint groups.
+            </p>
+            <p>
+              We applied simulated annealing to the problem, finding dynamic constraint groupings that reduced the dispatch down percentage of renewables. We built a simulation taking in towns and a given grouping to produce a dispatch down rate, then a proposal and annealing schedule to optimise it. Our method reduced dispatch down by 0.5% compared to the current all-Ireland groupings, a saving of millions of euros per year.
+            </p>
+
+            <a href="https://github.com/ciangregg/EIEG_Hackathon26">View the project (github)</a><br>
+            <a href="reports/slides_constraint_annealing.pdf">Read the Slides (PDF)</a><br>
+
+          </article>
+          <article class="entry">
+            <h3>TPSA Website Redesign 2025</h3>
+            <p>
+              I took on the role of webmaster for the Theoretical Physics Student Association for the academic years 2025/26 and 2026/27, where I went about a complete rebuild of the site. Negotiating a web hosting sponsorship with <a href="https://www.blacknight.com/" style="color: --var(muted);">Blacknight Solutions</a> and implementing static site generation, over the summer.
+            </p>
+
+            <a href="https://tpsa.ie/student">View the site</a><br>
+
+          </article>
+          <article class="entry">
+            <h3>The Ecnetica Project 2025</h3>
+            <h4>Frontend Design</h4>
+            <p>
+              Over the summer I worked on the Ecnetica Project for The Problem Solving Association non-profit, an initiative aimed at providing high quality resources to all LC Maths students and addressing the current challenges associated with the grinds culture across Ireland. I applied my webdesign skills to improved the appearance and functionality of the prototype site.  
+            </p>
+
+            <a href="https://tpsa.ie/problem-solving/#projects">View the non-profit</a><br>
+            <a href="https://github.com/MichaelAJMitchell/Ecnetica">View the project (github)</a><br>
+
+          </article>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p><a href="mailto:cian@gregg.ie">cian@gregg.ie</a> or 
+           <a href="mailto:greggci@tcd.ie">greggci@tcd.ie</a></p>
+
+        <!--<p><a href="https://github.com/ciangregg">GitHub</a></p>-->
+
+    </section>
+
+</main>
+
+<script type="module" src="ising-title/js/main.js"></script>
 
 </body>
 </html>

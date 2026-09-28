@@ -18,7 +18,7 @@ export function draw(ctx, sim) {
             const s = sim.spins[y * sim.nx + x];
 
             ctx.fillStyle =
-                s === 1 ? "#ffffff" : "#202020";
+                s === 1 ? "#ffffff" : "#0e0e0e";
 
             ctx.fillRect(
                 x * cell,
